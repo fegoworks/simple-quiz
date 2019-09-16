@@ -18,7 +18,9 @@ form {
 }
 
 input[type=email],
-input[type=password] {
+input[type=password],
+input[type=text],
+input[type=number] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -45,7 +47,7 @@ button:hover {
   /* border: 3px solid #6d6161; */
   padding: 16px;
   margin: 50px auto;
-  width: 50%;
+  width: 40%;
   text-align: center;
 }
 
