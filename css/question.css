@@ -1,10 +1,11 @@
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
-  width: 100%;
-  font-size: 1rem;
+  width: 90%;
+  font-size: 1.7rem;
   border: 0.1rem solid rgb(34, 95, 36, 0.25);
   background: white;
+  margin: 3px auto;
 }
 
 .choice-container:hover {
@@ -22,9 +23,4 @@
 
 .choice-text {
   padding: 1.5rem;
-}
-
-#question {
-  margin: 20px;
-  padding: 20px;
 }
