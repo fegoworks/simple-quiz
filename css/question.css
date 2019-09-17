@@ -33,3 +33,18 @@
 .incorrect {
   background: #dc3545
 }
+
+/* Game header */
+#gamehead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gamehead-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.gamehead-main-text {
+  text-align: center;
+}
