@@ -27,8 +27,9 @@ const startQuiz = async () => {
 
 const getQuestion = () => {
   if (questionsArr.length === 0 || questionsArr > max_questions) {
+    localStorage.setItem("recentScore", score)
     // Take user to end page
-    return window.location.assign('./pages/end.html')
+    return window.location.assign('endGame.html')
   }
   questionCount = questionCount + 1;
   countText.innerText = `${questionCount}/${max_questions}`
@@ -80,7 +81,7 @@ options.forEach(option => {
 
 const getScore = number => {
   score += number
-  console.log(score)
+  // console.log(score)
   scoreText.innerText = score;
 }
 
