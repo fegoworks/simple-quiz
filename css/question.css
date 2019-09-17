@@ -1,4 +1,4 @@
-.choice-container {
+.option-container {
   display: flex;
   margin-bottom: 0.5rem;
   width: 90%;
@@ -8,19 +8,28 @@
   margin: 3px auto;
 }
 
-.choice-container:hover {
+.option-container:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(34, 95, 36, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
 
-.choice-prefix {
+.option-prefix {
   padding: 1.5rem 2.5rem;
   background: rgb(74, 134, 74);
   color: white;
 }
 
-.choice-text {
+.option-text {
   padding: 1.5rem;
+  width: 100%
+}
+
+.correct {
+  background: rgb(84, 189, 84);
+}
+
+.incorrect {
+  background: #dc3545
 }
