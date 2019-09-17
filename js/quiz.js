@@ -1,5 +1,8 @@
 const question = document.querySelector("#question")
 const options = Array.from(document.getElementsByClassName("option-text"))
+const countText = document.querySelector("#questionCount")
+const scoreText = document.querySelector("#score")
+
 const DATABASE_URI = "http://localhost:3000/questions"
 
 let currentQuestion = {};
@@ -9,7 +12,7 @@ let questionCount = 0;
 let questionsArr = [];
 
 const max_questions = 5;
-
+const bonus = 10;
 // Get questions from backend
 const startQuiz = async () => {
   const response = await fetch(DATABASE_URI);
@@ -28,6 +31,9 @@ const getQuestion = () => {
     return window.location.assign('./pages/end.html')
   }
   questionCount = questionCount + 1;
+  countText.innerText = `${questionCount}/${max_questions}`
+
+
   let index = Math.floor(Math.random() * questionsArr.length)
   currentQuestion = questionsArr[index]
   question.innerText = currentQuestion.question;
@@ -57,6 +63,10 @@ options.forEach(option => {
       correctClass = "correct"
     }
 
+    if (correctClass == "correct") {
+      getScore(bonus)
+    }
+
     selectedOption.parentElement.classList.add(correctClass)
 
     setTimeout(() => {
@@ -67,5 +77,11 @@ options.forEach(option => {
     // console.log(selectedAnswer == currentQuestion.answer)
   })
 })
+
+const getScore = number => {
+  score += number
+  console.log(score)
+  scoreText.innerText = score;
+}
 
 startQuiz()
