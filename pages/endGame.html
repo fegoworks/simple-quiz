@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz - Game Over</title>
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="end" class="flex-center flex-column">
+      <h1 id="finalScore">0</h1>
+      <form action="">
+        <input type="text" name="" id="username" placeholder="username">
+        <button type="submit" class="btn" id="saveScore" onclick="saveHighScore(event)" disabled>Save</button>
+        <a href="questions.html" class="btn">Play Again</a>
+        <a href="dashboard.html" class="btn">Go Home</a>
+
+      </form>
+    </div>
+  </div>
+</body>
+<script src="../js/endgame.js"></script>
+
+</html>
