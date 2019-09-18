@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz: Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+  <div class="container">
+    <section class="question-list">
+      <h1>Questions</h1>
+
+    </section>
+    <section class="add-question">
+      <form action="">
+        <input type="text" name="question" id="question" placeholder="Enter Question" required />
+        <input type="text" name="option-1" id="option-1" placeholder="Option 1" required />
+        <input type="text" name="option-2" id="option-2" placeholder="Option 2" required />
+        <input type="text" name="option-3" id="option-3" placeholder="Option 3" required />
+        <input type="text" name="option-4" id="option-4" placeholder="Option 4" required />
+        <input type="number" min="1" max="4" name="answer" id="answer" placeholder="Correct Option" required />
+
+        <button id="newQuestion">Add new questions</button>
+        <button id="updateQuestion">Update question</button>
+      </form>
+    </section>
+  </div>
+  <script src="../js/app.js"></script>
+
+</body>
+
+</html>
