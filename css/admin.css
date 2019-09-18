@@ -1,0 +1,110 @@
+/* Admin style */
+
+.container {
+
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+
+}
+
+
+.add-question form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.btn-small {
+  width: 49%
+}
+
+.question {
+  box-shadow: 0px 0px 5px 1px;
+  border: 1px black solid;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#edit {
+  background: rgb(172, 172, 15);
+}
+
+#delete {
+  background: red;
+  font-weight: 500
+}
+
+/* Question styles */
+.option-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 90%;
+  font-size: 1rem;
+  border: 0.1rem solid rgb(34, 95, 36, 0.25);
+  background: white;
+  margin: 3px auto;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  width: 90%;
+  font-size: 1rem;
+  border: none;
+  background: white;
+  margin: 3px auto;
+}
+
+.option-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(34, 95, 36, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.option-prefix {
+  padding: 0.5rem;
+  background: rgb(74, 134, 74);
+  color: white;
+}
+
+.option-text {
+  padding: 0.5rem;
+  width: 80%
+}
+
+.correct {
+  background: rgb(84, 189, 84);
+}
+
+.incorrect {
+  background: #dc3545
+}
+
+#game {
+  margin: 3.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
