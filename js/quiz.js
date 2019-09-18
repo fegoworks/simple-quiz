@@ -41,7 +41,7 @@ const getQuestion = () => {
 
   options.forEach(option => {
     const number = option.dataset["number"]
-    option.innerText = currentQuestion["choice-" + number]
+    option.innerText = currentQuestion["option_" + number]
   })
 
   questionsArr.splice(index, 1)
