@@ -1,0 +1,17 @@
+{
+  "users": [{
+    "id": 1,
+    "username": "codaphrenic",
+    "email": "fegoworks@hotmail.com",
+    "userrole": "admin",
+    "password": "Hyperlink",
+    "phone": 80948925873
+  }, {
+    "id": 2,
+    "username": "schoolboyq",
+    "email": "desmond.titi@hotmail.com",
+    "userrole": "user",
+    "password": "Hyperlink",
+    "phone": 8094892572
+  }]
+}
