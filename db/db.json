@@ -1,6 +1,5 @@
 {
-  "questions": [
-    {
+  "questions": [{
       "id": 1,
       "question": "<h1> element in HTML defines",
       "option_1": "Headings",
@@ -44,6 +43,31 @@
       "option_4": "New Line",
       "answer": "4",
       "id": 5
+    }
+  ],
+  "users": [{
+      "id": 1,
+      "username": "codaphrenic",
+      "email": "fegoworks@hotmail.com",
+      "userrole": "admin",
+      "password": "Hyperlink",
+      "phone": 80948925873
+    },
+    {
+      "id": 2,
+      "username": "schoolboyq",
+      "email": "desmond.titi@hotmail.com",
+      "userrole": "user",
+      "password": "Hyperlink",
+      "phone": 8094892572
+    },
+    {
+      "username": "feggie",
+      "email": "codeninja44@protonmail.com",
+      "phone": "7033521930",
+      "password": "letemhaveitel",
+      "userrole": "user",
+      "id": 3
     }
   ]
 }
