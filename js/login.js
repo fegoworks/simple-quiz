@@ -15,13 +15,13 @@ btnLogin.addEventListener('submit', async (event) => {
   const [user] = await response.json();
 
 
-  console.log(user)
+  // console.log(user)
 
   // const user = await users.find(user => {
   //   return user.email == email;
   // })
 
-  console.log(user.email)
+  // console.log(user.email)
 
   if (!user) {
     alert("The email address that you've entered doesn't match any account. Sign up for an account.")
