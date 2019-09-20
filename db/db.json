@@ -1,5 +1,6 @@
 {
-  "questions": [{
+  "questions": [
+    {
       "id": 1,
       "question": "<h1> element in HTML defines",
       "option_1": "Headings",
@@ -43,9 +44,19 @@
       "option_4": "New Line",
       "answer": "4",
       "id": 5
+    },
+    {
+      "question": "What is the author's name",
+      "option_1": "Fego",
+      "option_2": "Sabastian",
+      "option_3": "Christian",
+      "option_4": "James",
+      "answer": "1",
+      "id": 6
     }
   ],
-  "users": [{
+  "users": [
+    {
       "id": 1,
       "username": "codaphrenic",
       "email": "fegoworks@hotmail.com",

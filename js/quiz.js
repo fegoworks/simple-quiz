@@ -26,7 +26,7 @@ const startQuiz = async () => {
 }
 
 const getQuestion = () => {
-  if (questionsArr.length === 0 || questionsArr > max_questions) {
+  if (questionsArr.length === 0 || questionCount > max_questions) {
     localStorage.setItem("recentScore", score)
     // Take user to end page
     return window.location.assign('endGame.html')
