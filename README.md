@@ -13,7 +13,7 @@ npm install
 #### start server
 
 ```
-  npx json-server --watch db.json
+  npx json-server --watch db/db.json
 ```
 
 #### start app
