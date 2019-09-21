@@ -7,7 +7,7 @@ A simple quiz app in vanilla javascript
 #### clone repo app and run
 
 ```
-npm install
+npm i -g json-server
 ```
 
 #### start server
