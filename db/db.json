@@ -1,6 +1,5 @@
 {
-  "questions": [
-    {
+  "questions": [{
       "id": 1,
       "question": "<h1> element in HTML defines",
       "option_1": "Headings",
@@ -28,13 +27,13 @@
       "answer": 2
     },
     {
-      "id": 4,
       "question": "For displaying a webpage within a webpage, HTML uses",
-      "option_1": "Classes",
-      "option_2": "Div element",
+      "option_1": "Class",
+      "option_2": "Div ",
       "option_3": "Span Element",
       "option_4": "Iframes",
-      "answer": 4
+      "answer": "4",
+      "id": 4
     },
     {
       "question": "A block level element of HTML always starts on a",
@@ -55,8 +54,7 @@
       "id": 6
     }
   ],
-  "users": [
-    {
+  "users": [{
       "id": 1,
       "username": "codaphrenic",
       "email": "fegoworks@hotmail.com",
@@ -79,6 +77,14 @@
       "password": "letemhaveitel",
       "userrole": "user",
       "id": 3
+    },
+    {
+      "username": "mary",
+      "email": "mary@gmail.com",
+      "userrole": "user",
+      "password": "mary",
+      "phone": "7033521930",
+      "id": 4
     }
   ]
 }
