@@ -12,12 +12,13 @@ let QUESTION_TO_EDIT
 
 
 console.log("app is running ")
-const DATABASE_URI = "http://localhost:3000/questions"
+const DATABASE_URI = "https://gist.githubusercontent.com/fegoworks/f2c5aea5e19bc333f5a08e0acf2041a7/raw/1304c2bd4740226ab417f5af55b454429238fc92/quizdb.json"
 
 // Get data from backend
 const getQuestions = async () => {
   const response = await fetch(DATABASE_URI)
-  const questions = await response.json();
+  const result = await response.json();
+  const questions = result.questions;
   populateQuestions(questions)
   const editQuestion = document.querySelectorAll("#edit");
 

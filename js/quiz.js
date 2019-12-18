@@ -3,7 +3,7 @@ const options = Array.from(document.getElementsByClassName("option-text"))
 const countText = document.querySelector("#questionCount")
 const scoreText = document.querySelector("#score")
 
-const DATABASE_URI = "http://localhost:3000/questions"
+const DATABASE_URI = "https://gist.githubusercontent.com/fegoworks/f2c5aea5e19bc333f5a08e0acf2041a7/raw/1304c2bd4740226ab417f5af55b454429238fc92/quizdb.json/"
 
 let currentQuestion = {};
 let acceptAnswer = true;
@@ -16,7 +16,8 @@ const bonus = 10;
 // Get questions from backend
 const startQuiz = async () => {
   const response = await fetch(DATABASE_URI);
-  const questions = await response.json();
+  const result = await response.json();
+  const questions = result.questions
   score = 0;
   questionCount = 0;
 

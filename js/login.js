@@ -4,22 +4,20 @@ console.log(email);
 
 
 console.log("app is running ")
-const DATABASE_URI = "http://localhost:3000/users"
+const DATABASE_URI = "https://gist.githubusercontent.com/fegoworks/f2c5aea5e19bc333f5a08e0acf2041a7/raw/1304c2bd4740226ab417f5af55b454429238fc92/quizdb.json/"
 
 btnLogin.addEventListener('submit', async (event) => {
   const email = document.querySelector("#email").value
   const password = document.querySelector("#password").value
 
   event.preventDefault()
-  const response = await fetch(`${DATABASE_URI}?email=${email}`);
-  const [user] = await response.json();
+  const response = await fetch(`${DATABASE_URI}`);
+  const result = await response.json();
+  const users = result.users;
 
-
-  // console.log(user)
-
-  // const user = await users.find(user => {
-  //   return user.email == email;
-  // })
+  const user = await users.find(user => {
+    return user.email == email;
+  })
 
   // console.log(user.email)
 
