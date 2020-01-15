@@ -1,6 +1,6 @@
 # simple-quiz
 
-A simple quiz app in vanilla javascript
+A simple quiz [app](https://fegoworks.github.io/chef-folio/ui/) in vanilla javascript
 
 ## testing simple quiz app
 
